@@ -11,49 +11,77 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <link href="estilos.css" rel="stylesheet">
 
-    <title>Pagina_1</title>
+    <title>Biografia</title>
 </head>
 
 <body>
-    
-    <div class="slide">
-            <div class="slide-inner">
-                <input class="slide-open" type="radio" id="slide-1" 
-                      name="slide" aria-hidden="true" hidden="" checked="checked">
-                <div class="slide-item">
-                    <img src="imagenes/imagen_1.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="imagenes/imagen_2.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="imagenes/imagen_3.jpg">
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                </ol>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/gabo.png" alt="10" width="100" ></a>
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="biografia.html">Biografia</a>
+              <a class="nav-link" href="obrDest.html">Obras Destacadas</a>
             </div>
+          </div>
         </div>
-      <div class="contenedor_general">
-        <a type="button" value="Ingresar" class="my-button" href="biografia.html" >Ingresar</a>
-    </div>  
+      </nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" >
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" ></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a   href="https://www.eltiempo.com/cultura/gente/legado-de-gabriel-garcia-marquez-se-estrenara-en-agosto-nos-vemos-859445">
+        <img src="img/gaboNot1.jpeg" alt="La obra llegará a todas las librerías de la mano del grupo editorial Peguin Random House." class="d-block w-100" >
+        <span class="carousel-caption btn btn-line-Secondary">La obra llegará a todas las librerías de la mano del grupo editorial Peguin Random House.</span>
+      
+    </a> 
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.senalcolombia.tv/cultura/gabriel-garcia-marquez-galeon-san-jose"> 
+          <img src="img/gaboNot2.jpg"  alt="Gabo se anticipó 30 años al hallazgo del Galeón San José" class="d-block w-100">
+          <span class="carousel-caption">Gabo se anticipó 30 años al hallazgo del Galeón San José</span>
+        </a>
+       
+      </div>
+      <div class="carousel-item">
+        <a href="https://hjck.com/libros/la-torre-colpatria-se-viste-de-realismo-magico-asi-anunciaran-la-novela-postuma-de-garcia-marquez-rg10"> 
+          <img src="img/descarga.jpg"  alt="Gabo se anticipó 30 años al hallazgo del Galeón San José" class="d-block w-100">
+          <span class="carousel-caption">La Torre Colpatria se viste de realismo mágico: así anunciarán la novela póstuma de García Márquez</span>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <div class="contenedor_general">
+    <a type="button" value="Ingresar" class="my-button" href="biografia.html" >Ingresar</a>
+</div>  
 </body>
 </html>
